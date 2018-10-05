@@ -4,6 +4,7 @@
 
 House::House()
 {
+	//Add something!
 }
 
 
