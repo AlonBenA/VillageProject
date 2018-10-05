@@ -6,11 +6,9 @@ Village::Village()
 {
 }
 
-
 Village::~Village()
 {
 }
-
 
 Village::Village(Family *families) {}
 void AddFamily(Family f) {}

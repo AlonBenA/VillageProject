@@ -1,32 +1,38 @@
 #include "pch.h"
 #include "Child.h"
 
-
 Child::Child()
 {
 }
 
+Child::Child(string name, string gender, bool isSingle, Person* p1, Person* p2):Person(name, gender, isspace)
+{
+	this->firstParent = p1;
+	this->secondParent = p2;
+}
 
 Child::~Child()
 {
 }
 
-Child::Child(string name, string gender, bool isSingle, Person* p1, Person* p2) {}
-
-Person* getFirstParent() {
-	Person p;
-	return &p;
+Person* Child::getFirstParent() 
+{
+	return this->firstParent;
 }
 
-Person* getSecondParent() {
-	Person p;
-	return &p;
+Person* Child::getSecondParent() 
+{
+	return this->secondParent;
 }
 
-void operator++ (Child) {
-
+const Child& Child::operator++()
+{
+	this->grade++;
+	return *this;
 }
 
-
-void operator-- (Child) {
+const Child& Child::operator--()
+{
+	this->grade--;
+	return *this;
 }

@@ -1,17 +1,24 @@
 #include "pch.h"
 #include "House.h"
 
-
 House::House()
 {
-	//Add something!
 }
 
+House::House(int numOfRooms)
+{
+	this->numOfRooms = numOfRooms;
+}
 
 House::~House()
 {
 }
 
-int GetNumRooms() {
-	return 0;
+int House::GetNumRooms() {
+	return this->numOfRooms;
+}
+
+void House::SetNumRooms(int numOfRooms)
+{
+	this->numOfRooms = numOfRooms;
 }

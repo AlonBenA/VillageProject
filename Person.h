@@ -1,6 +1,7 @@
 #pragma once
 #include <string>
 using namespace std;
+
 class Person
 {
 protected:
@@ -9,10 +10,15 @@ protected:
 
 public:
 	Person();
+	Person(string name, string gender, bool isSingle);
 	~Person();
 	
-	bool hasSpouse();
 	string getName();
+	void setName(string name);
 	string getGender();
+	void setGender(string gender);
+	bool hasSpouse();
+	void setSpouse(bool isSingle);
+
 	string introduce();
 };

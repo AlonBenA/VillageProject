@@ -2,7 +2,7 @@
 #include "Person.h"
 #include "Animal.h"
 #include "House.h"
-//Alon 2
+
 class Family
 {
 private:

@@ -2,19 +2,23 @@
 #include "Villa.h"
 
 
-Villa::Villa()
+Villa::Villa():House()
 {
 }
 
+Villa::Villa(int numOfRooms, bool hasPool, int floors):House (numOfRooms)
+{
+	this->hasPool = hasPool;
+	this->floors = floors;
+}
 
 Villa::~Villa()
 {
 }
 
-Villa::Villa(int numOfRooms, bool hasPool, int floors) {}
-bool getHasPool() {
-	return false;
+bool Villa::getHasPool() {
+	return this->hasPool;
 }
-int getNumOfFloors() {
-	return 0;
+int Villa::getNumOfFloors() {
+	return this->hasPool;
 }

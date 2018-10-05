@@ -4,18 +4,36 @@
 
 Parent::Parent()
 {
+
 }
 
+Parent::Parent(string name, string gender, bool isSingle, int numOfChildren):Person(name, gender, isSingle)
+{
+	this->numOfChildren = numOfChildren;
+	this->spouse = NULL;
+}
 
 Parent::~Parent()
 {
 }
 
-Parent::Parent(string name, string gender, bool isSingle, int numOfChildren) {}
-
-Person* getChildren() {
-	Person p;
-	return &p;
+void Parent::addChild(Child child)
+{
+	this->myChildren.push_back(child);
 }
-void operator+(Parent spouse) {}
-void addChild(Person child) {}
+
+vector<Child> Parent::showChildren()
+{
+	return this->myChildren;
+}
+
+const Parent& Parent::operator+(Parent spouse)
+{
+	this->spouse = &spouse;
+	return *this;
+}
+
+Parent* Parent::getSupouse()
+{
+	return this->spouse;
+}

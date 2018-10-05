@@ -1,11 +1,13 @@
 #pragma once
 #include "House.h"
+
 class Apartment :
 	public House
 {
 private:
 	int floor;
 	int apartmentNumber;
+
 public:
 	Apartment();
 	~Apartment();

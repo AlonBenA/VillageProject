@@ -2,21 +2,24 @@
 #include "Apartment.h"
 
 
-Apartment::Apartment()
+Apartment::Apartment():House()
 {
 }
 
+Apartment::Apartment(int numOfRooms, int floor, int apartmentNumber):House(numOfRooms)
+{
+	this->floor = floor;
+	this->apartmentNumber = apartmentNumber;
+}
 
 Apartment::~Apartment()
 {
 }
 
-Apartment::Apartment(int numOfRooms, int floor, int apartmentNumber) {}
-
-int getFloorNumber() {
-	return 0;
+int Apartment::getFloorNumber() {
+	return this->floor;
 }
 
-int getApartmentNumber() {
-	return 0;
+int Apartment::getApartmentNumber() {
+	return this->apartmentNumber;
 }
