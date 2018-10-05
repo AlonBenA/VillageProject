@@ -15,6 +15,7 @@ public:
 
 	Person* getFirstParent();
 	Person* getSecondParent();
+	int getGrade();
 
 	const Child& operator++();
 	const Child& operator--();

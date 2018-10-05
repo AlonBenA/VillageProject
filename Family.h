@@ -1,24 +1,29 @@
 #pragma once
+#include <vector>
 #include "Person.h"
 #include "Animal.h"
 #include "House.h"
+
+using namespace std;
 
 class Family
 {
 private:
 	int numOfFamilyMembers;
-	Person* myFamilyMembers;
+	vector<Person> myFamilyMembers;
 	int numOfAnimals;
-	Animal* myAnimals;
+	vector<Animal> myAnimals;
 	House myHouse;
+
 public:
 	Family();
 	~Family();
-	Family(int numOfFamilyMembers, Person* myFamilyMembers, int numOfAnimals, Animal* myAnimals, House myHouse);
-	Person* GetFamilyMembers();
-	Animal* GetAnimals();
-	void operator+(Animal a);
-	void operator-(Animal a);
+	Family(int numOfFamilyMembers, vector<Person> myFamilyMembers,
+			int numOfAnimals, vector<Animal> myAnimals, House myHouse);
+	vector<Person> GetFamilyMembers();
+	vector<Animal> GetAnimals();
+	const Family& operator+(Animal a);
+	const Family& operator-(Animal a);
 	House GetHouse();
 };
 

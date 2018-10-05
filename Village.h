@@ -1,13 +1,17 @@
 #pragma once
+#include <vector>
 #include "Family.h"
+
 class Village
 {
 private:
-	Family* families;
+	vector<Family> families;
+
 public:
 	Village();
-	Village(Family *families);
+	Village(vector<Family> families);
 	~Village();
+
 	void AddFamily(Family f);
 	void DisqualifyFamily(Family f);
 	int GetNumOfResidents();

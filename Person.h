@@ -11,7 +11,7 @@ protected:
 public:
 	Person();
 	Person(string name, string gender, bool isSingle);
-	~Person();
+	virtual ~Person();
 	
 	string getName();
 	void setName(string name);

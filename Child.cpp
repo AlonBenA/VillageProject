@@ -25,6 +25,11 @@ Person* Child::getSecondParent()
 	return this->secondParent;
 }
 
+int Child::getGrade()
+{
+	return this->grade;
+}
+
 const Child& Child::operator++()
 {
 	this->grade++;
