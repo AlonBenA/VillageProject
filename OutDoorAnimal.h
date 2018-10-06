@@ -6,8 +6,12 @@ class OutDoorAnimal :
 protected:
 	bool isDangerous;
 	bool isMeatEater;
+
+
 public:
+
 	OutDoorAnimal();
+	OutDoorAnimal(int numOfLegs, bool isDangerous, bool isMeatEater);
 	~OutDoorAnimal();
 	bool getIsDangerous();
 	bool getIsMeatEater();

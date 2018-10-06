@@ -6,10 +6,15 @@ class Animal
 {
 protected:
 	int numOfLegs;
+
+
 public:
+	Animal(int numOfLegs);
 	Animal();
+
+
 	~Animal();
 	int ShowNumLegs();
-	//virtual string MakeNoise();
+	virtual string MakeNoise();
 };
 

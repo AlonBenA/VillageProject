@@ -7,6 +7,6 @@ public:
 	Bear();
 	~Bear();
 	Bear(int numOfLegs, bool isDangerous, bool isMeatEater);
-	//string MakeNoise();
+	string MakeNoise();
 };
 

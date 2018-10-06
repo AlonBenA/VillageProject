@@ -11,8 +11,10 @@ Dog::~Dog()
 {
 }
 
-Dog::Dog(int numOfLegs, bool isEnergetic, bool isLoyal) {}
+Dog::Dog(int numOfLegs, bool isEnergetic, bool isLoyal, string name): InDoorAnimal(numOfLegs, isEnergetic, isLoyal, name)
+{
+}
 
-/*string dog::makenoise() {
-	return "";
-}*/
+string Dog::MakeNoise() {
+	return "Woof!!";
+}

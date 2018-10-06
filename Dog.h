@@ -6,7 +6,7 @@ class Dog :
 public:
 	Dog();
 	~Dog();
-	Dog(int numOfLegs, bool isEnergetic, bool isLoyal);
-	//string MakeNoise();
+	Dog(int numOfLegs, bool isEnergetic, bool isLoyal, string name);
+	string MakeNoise();
 };
 

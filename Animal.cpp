@@ -1,7 +1,11 @@
 #include "pch.h"
 #include "Animal.h"
 
-Animal::Animal()
+Animal::Animal() {
+
+}
+
+Animal::Animal(int numOfLegs): numOfLegs(numOfLegs)
 {
 }
 
@@ -9,10 +13,10 @@ Animal::~Animal()
 {
 }
 
-int ShowNumLegs() {
-	return 0;
+int Animal::ShowNumLegs() {
+	return numOfLegs;
 }
 
-string MakeNoise() {
+string Animal::MakeNoise() {
 	return "";
 }
