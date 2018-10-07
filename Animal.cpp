@@ -20,3 +20,10 @@ int Animal::ShowNumLegs() {
 string Animal::MakeNoise() {
 	return "";
 }
+
+
+bool Animal::operator==(const Animal& other) {
+	if (numOfLegs == other.numOfLegs)
+		return true;
+	return false;
+}

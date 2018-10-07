@@ -26,3 +26,12 @@ bool InDoorAnimal::getIsLoyal() {
 string InDoorAnimal::getName() {
 	return name;
 }
+
+
+bool InDoorAnimal::operator==(const InDoorAnimal& other) {
+	if (Animal::operator==(other) && (isLoyal == other.isLoyal) &&
+		(isEnergetic == other.isEnergetic) && (name == other.name) ) {
+		return true;
+	}
+	return false;
+}

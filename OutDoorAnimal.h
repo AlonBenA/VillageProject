@@ -16,5 +16,6 @@ public:
 	bool getIsDangerous();
 	bool getIsMeatEater();
 
+	bool operator==(const OutDoorAnimal& other);
 };
 

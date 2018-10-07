@@ -22,3 +22,13 @@ bool OutDoorAnimal::getIsDangerous() {
 bool OutDoorAnimal::getIsMeatEater() {
 	return isMeatEater;
 }
+
+
+bool OutDoorAnimal::operator==(const OutDoorAnimal& other) {
+
+	if ( Animal::operator==(other) && (isDangerous == other.isDangerous) &&
+		(isMeatEater == other.isMeatEater) ) {
+		return true;
+	}
+	return false;
+}

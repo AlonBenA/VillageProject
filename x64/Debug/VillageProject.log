@@ -1,7 +1,5 @@
 ﻿  pch.cpp
   VillageProject.cpp
-d:\github projects\villageproject\villageproject\villageproject.cpp(17): warning C4305: 'argument': truncation from 'int' to 'bool'
-d:\github projects\villageproject\villageproject\villageproject.cpp(18): warning C4305: 'argument': truncation from 'int' to 'bool'
 d:\github projects\villageproject\villageproject\villageproject.cpp(30): error C2664: 'Family::Family(const Family &)': cannot convert argument 2 from 'Person *' to 'std::vector<Person,std::allocator<_Ty>>'
           with
           [

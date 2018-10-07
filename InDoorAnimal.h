@@ -18,5 +18,6 @@ public:
 	bool getIsLoyal();
 	string getName();
 
+	bool operator==(const InDoorAnimal& other);
 };
 

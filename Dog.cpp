@@ -18,3 +18,12 @@ Dog::Dog(int numOfLegs, bool isEnergetic, bool isLoyal, string name): InDoorAnim
 string Dog::MakeNoise() {
 	return "Woof!!";
 }
+
+
+
+bool Dog::operator==(const Dog & other) {
+	if (InDoorAnimal::operator==(other)) {
+		return true;
+	}
+	return false;
+}

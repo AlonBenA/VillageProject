@@ -17,3 +17,11 @@ Bear::Bear(int numOfLegs, bool isDangerous, bool isMeatEater): OutDoorAnimal(num
 string Bear::MakeNoise() {
 	return "bear shonds";
 }
+
+
+bool Bear::operator==(const Bear & other) {
+	if (OutDoorAnimal::operator==(other)) {
+		return true;
+	}
+	return false;
+}

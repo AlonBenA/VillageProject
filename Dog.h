@@ -8,5 +8,7 @@ public:
 	~Dog();
 	Dog(int numOfLegs, bool isEnergetic, bool isLoyal, string name);
 	string MakeNoise();
+
+	bool operator==(const Dog & other);
 };
 
