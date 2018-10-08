@@ -23,3 +23,10 @@ int Apartment::getFloorNumber() {
 int Apartment::getApartmentNumber() {
 	return this->apartmentNumber;
 }
+
+bool Apartment::operator==(const Apartment& apt1) const
+{
+	if ((this->apartmentNumber == apt1.apartmentNumber) && (this->floor == apt1.floor))
+		return true;
+	return false;
+}

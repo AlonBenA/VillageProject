@@ -1,3 +1,4 @@
+#include "stdafx.h"
 #include <iostream>
 #include <algorithm>
 #include "pch.h"
@@ -28,7 +29,10 @@ void Village::DisqualifyFamily(Family f)
 {
 	vector<Family>::iterator found = find(this->families.begin(), this->families.end(), f);
 	if (found == this->families.end()) //Maybe we needs to overload the operator== at Family
+	{
 		cout << "Animal doesn't exist\n";
+		return;
+	}
 	this->families.erase(found);
 }
 
@@ -53,7 +57,7 @@ int Village::GetNumOfAnimals()
 	vector<Family>::iterator itrEnd = this->families.end();
 	for (; itr != itrEnd; ++itr)
 	{
-		numOfAnimals += ((*itr).GetFamilyMembers.size());
+		numOfAnimals += (*itr).GetFamilyMembers().size();
 	}
 
 	return numOfAnimals;

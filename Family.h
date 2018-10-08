@@ -22,6 +22,7 @@ public:
 			int numOfAnimals, vector<Animal> myAnimals, House myHouse);
 	vector<Person> GetFamilyMembers();
 	vector<Animal> GetAnimals();
+	bool operator==(const Family& family1) const;
 	const Family& operator+(Animal a);
 	const Family& operator-(Animal a);
 	House GetHouse();
