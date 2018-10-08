@@ -19,5 +19,6 @@ public:
 
 	const Child& operator++();
 	const Child& operator--();
+	bool operator==(const Child &other);
 };
 

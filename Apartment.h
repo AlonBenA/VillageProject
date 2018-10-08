@@ -14,6 +14,6 @@ public:
 	Apartment(int numOfRooms, int floor, int apartmentNumber);
 	int getFloorNumber();
 	int getApartmentNumber();
-	bool operator==(const Apartment& apartment1) const;
+	bool operator==(const Apartment& other);
 };
 

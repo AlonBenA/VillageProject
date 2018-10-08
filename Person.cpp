@@ -56,3 +56,12 @@ string Person::introduce()
 		personInfo += "false \n";
 	return personInfo;
 }
+
+bool Person::operator==(const Person &other)
+{
+	if (other.name.compare(this->name) == 0)
+		if (other.isSingle == this->isSingle)
+			if (other.gender.compare(this->gender) == 0)
+				return true;
+	return false;
+}

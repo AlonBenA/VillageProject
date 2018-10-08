@@ -41,3 +41,16 @@ const Child& Child::operator--()
 	this->grade--;
 	return *this;
 }
+
+bool Child::operator==(const Child &other)
+{
+	if (Person::operator==(other) == false)
+		return false;
+	if ((*(other.firstParent) == *(this->firstParent)) == false)
+		return false;
+	if ((*(other.secondParent) == *(this->secondParent)) == false)
+		return false;
+	if (other.grade != this->grade)
+		return false;
+	return true;
+}

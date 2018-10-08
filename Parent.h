@@ -21,5 +21,6 @@ public:
 	vector<Child> showChildren();
 	const Parent& operator+(Parent spouse);
 	Parent* getSupouse();
+	bool operator==(const Parent &other);
 };
 

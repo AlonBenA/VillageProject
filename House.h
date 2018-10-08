@@ -10,5 +10,6 @@ public:
 	~House();
 	int GetNumRooms();
 	void SetNumRooms(int numOfRooms);
+	bool operator==(const House &other);
 };
 

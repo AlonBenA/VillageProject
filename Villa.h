@@ -14,5 +14,6 @@ public:
 
 	bool getHasPool();
 	int getNumOfFloors();
+	bool operator==(const Villa &other);
 };
 

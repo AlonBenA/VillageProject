@@ -36,3 +36,18 @@ Parent* Parent::getSupouse()
 {
 	return this->spouse;
 }
+
+bool Parent::operator==(const Parent &other)
+{
+	if (Person::operator==(other) == false)
+		return false;
+	if (this->numOfChildren != other.numOfChildren)
+		return false;
+	if ((*(this->spouse) == *(other.spouse)) == false)
+		return false;
+	bool is_equal = false;
+	is_equal = std::equal(this->myChildren.begin(), this->myChildren.end(), other.myChildren.begin());
+	if (is_equal==false)
+		return false;
+	return true;
+}

@@ -38,7 +38,7 @@ const Family& Family::operator+(Animal a)
 const Family& Family::operator-(Animal a)
 {
 	vector<Animal>::iterator found = find(this->myAnimals.begin(), this->myAnimals.end(), a);
-	if (found == this->myAnimals.end()) //Maybe it would be necessary to overload the operator== at Animal
+	if (found == this->myAnimals.end())
 		cout << "Animal doesn't exist\n";
 	this->myAnimals.erase(found);
 }
@@ -46,4 +46,23 @@ const Family& Family::operator-(Animal a)
 House Family::GetHouse()
 {
 	return this->myHouse;
+}
+
+bool Family::operator==(const Family& other)
+{
+	if (other.numOfAnimals != this->numOfAnimals)
+		return false;
+	bool isEqualMembers = false;
+	isEqualMembers = std::equal(this->myFamilyMembers.begin(), this->myFamilyMembers.end(), other.myFamilyMembers.begin());
+	if (isEqualMembers == false)
+		return false;
+	if (other.numOfAnimals != this->numOfAnimals)
+		return false;
+	bool isEqualAnimals = false;
+	isEqualAnimals = std::equal(this->myAnimals.begin(), this->myAnimals.end(), other.myAnimals.begin());
+	if (isEqualAnimals == false)
+		return false;
+	if (this->myHouse == other.myHouse)
+		return false;
+	return true;
 }

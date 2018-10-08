@@ -24,9 +24,13 @@ int Apartment::getApartmentNumber() {
 	return this->apartmentNumber;
 }
 
-bool Apartment::operator==(const Apartment& apt1) const
+bool Apartment::operator==(const Apartment& other) 
 {
-	if ((this->apartmentNumber == apt1.apartmentNumber) && (this->floor == apt1.floor))
-		return true;
+	if (House::operator==(other) == false)
+		return false;
+	if (this->apartmentNumber != other.apartmentNumber)
+		return false;
+	if (this->floor != other.floor)
+		return false;
 	return false;
 }

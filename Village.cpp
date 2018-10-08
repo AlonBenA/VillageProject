@@ -28,9 +28,9 @@ void Village::AddFamily(Family f)
 void Village::DisqualifyFamily(Family f)
 {
 	vector<Family>::iterator found = find(this->families.begin(), this->families.end(), f);
-	if (found == this->families.end()) //Maybe we needs to overload the operator== at Family
+	if (found == this->families.end())
 	{
-		cout << "Animal doesn't exist\n";
+		cout << "Family doesn't exist\n";
 		return;
 	}
 	this->families.erase(found);

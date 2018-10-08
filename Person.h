@@ -21,4 +21,5 @@ public:
 	void setSpouse(bool isSingle);
 
 	string introduce();
+	bool operator==(const Person &other);
 };
