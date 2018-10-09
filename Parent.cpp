@@ -26,7 +26,7 @@ vector<Child> Parent::showChildren()
 	return this->myChildren;
 }
 
-const Parent& Parent::operator+(Parent spouse)
+const Parent& Parent::operator+(Parent& spouse)
 {
 	this->spouse = &spouse;
 	return *this;

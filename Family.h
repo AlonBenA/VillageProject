@@ -10,21 +10,21 @@ class Family
 {
 private:
 	int numOfFamilyMembers;
-	vector<Person> myFamilyMembers;
+	vector<Person*> myFamilyMembers;
 	int numOfAnimals;
-	vector<Animal> myAnimals;
-	House myHouse;
+	vector<Animal*> myAnimals;
+	House* myHouse;
 
 public:
 	Family();
 	~Family();
-	Family(int numOfFamilyMembers, vector<Person> myFamilyMembers,
-			int numOfAnimals, vector<Animal> myAnimals, House myHouse);
-	vector<Person> GetFamilyMembers();
-	vector<Animal> GetAnimals();
+	Family(int numOfFamilyMembers, vector<Person*> myFamilyMembers,
+			int numOfAnimals, vector<Animal*> myAnimals, House* myHouse);
+	vector<Person*> GetFamilyMembers();
+	vector<Animal*> GetAnimals();
 	bool operator==(const Family& other);
-	const Family& operator+(Animal a);
-	const Family& operator-(Animal a);
-	House GetHouse();
+	const Family& operator+(Animal& a);
+	const Family& operator-(Animal& a);
+	House* GetHouse();
 };
 

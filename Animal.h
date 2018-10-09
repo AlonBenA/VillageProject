@@ -13,7 +13,7 @@ public:
 	Animal();
 
 
-	~Animal();
+	virtual ~Animal();
 	int ShowNumLegs();
 	virtual string MakeNoise();
 	bool operator==(const Animal& other);

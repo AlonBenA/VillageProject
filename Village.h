@@ -12,8 +12,8 @@ public:
 	Village(vector<Family> families);
 	~Village();
 
-	void AddFamily(Family f);
-	void DisqualifyFamily(Family f);
+	void AddFamily(Family& f);
+	void DisqualifyFamily(Family& f);
 	int GetNumOfResidents();
 	int GetNumOfAnimals();
 	bool validateAllHousesAreIndividual();

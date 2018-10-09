@@ -9,6 +9,8 @@ Child::Child(string name, string gender, bool isSingle, Person* p1, Person* p2):
 {
 	this->firstParent = p1;
 	this->secondParent = p2;
+	this->grade = 1;
+	this->isSingle = true;
 }
 
 Child::~Child()

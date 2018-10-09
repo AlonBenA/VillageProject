@@ -7,7 +7,7 @@ private:
 public:
 	House();
 	House(int numOfRooms);
-	~House();
+	virtual ~House();
 	int GetNumRooms();
 	void SetNumRooms(int numOfRooms);
 	bool operator==(const House &other);
