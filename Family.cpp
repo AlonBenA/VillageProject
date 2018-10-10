@@ -2,6 +2,9 @@
 #include <algorithm>
 #include "pch.h"
 #include "Family.h"
+#include "InDoorAnimal.h"
+
+using namespace std;
 
 Family::Family()
 {
@@ -33,16 +36,18 @@ vector<Animal*> Family::GetAnimals()
 
 const Family& Family::operator+(Animal& a)
 {
-	this->myAnimals.push_back(&a);
-	this->numOfAnimals++;
-	return *this;
+
+		this->myAnimals.push_back(&a);
+		this->numOfAnimals++;
+		return *this;
 }
 
 const Family& Family::operator-(Animal& a)
 {
 	vector<Animal*>::iterator found = find(this->myAnimals.begin(), this->myAnimals.end(), &a);
-	if (found == this->myAnimals.end())
-		cout << "Animal doesn't exist\n";
+	if (found == this->myAnimals.end()) {
+		cout << "Animal doesn't exist\n" << endl;
+	}
 	this->myAnimals.erase(found);
 	this->numOfAnimals--;
 	return *this;

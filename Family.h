@@ -4,8 +4,6 @@
 #include "Animal.h"
 #include "House.h"
 
-using namespace std;
-
 class Family
 {
 private:

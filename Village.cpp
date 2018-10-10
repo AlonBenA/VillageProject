@@ -1,4 +1,3 @@
-#include "stdafx.h"
 #include <iostream>
 #include <algorithm>
 #include <typeinfo>
@@ -9,6 +8,8 @@
 #include "Child.h"
 #include "Dog.h"
 #include "Parent.h"
+
+using namespace std;
 
 Village::Village()
 {
@@ -28,11 +29,11 @@ void Village::AddFamily(Family& f)
 	this->families.push_back(f);
 }
 
-void Village::DisqualifyFamily(Family& f)
+void Village::DisqualifyFamily(Family & f)
 {
 	vector<Family>::iterator found = find(this->families.begin(), this->families.end(), f);
 	if (found == this->families.end())
-		cout << "Family doesn't exist\n";
+		cout << "Family doesn't exist\n" << endl;
 	else
 		this->families.erase(found);
 }

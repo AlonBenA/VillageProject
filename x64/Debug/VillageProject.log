@@ -1,27 +1,8 @@
-﻿  pch.cpp
-  VillageProject.cpp
-d:\github projects\villageproject\villageproject\villageproject.cpp(30): error C2664: 'Family::Family(const Family &)': cannot convert argument 2 from 'Person *' to 'std::vector<Person,std::allocator<_Ty>>'
-          with
-          [
-              _Ty=Person
-          ]
-  d:\github projects\villageproject\villageproject\villageproject.cpp(30): note: No constructor could take the source type, or constructor overload resolution was ambiguous
+﻿  VillageProject.cpp
   Village.cpp
-d:\github projects\villageproject\villageproject\village.cpp(31): error C2065: 'cout': undeclared identifier
-d:\github projects\villageproject\villageproject\village.cpp(43): warning C4267: '+=': conversion from 'size_t' to 'int', possible loss of data
-d:\github projects\villageproject\villageproject\village.cpp(56): error C2228: left of '.size' must have class/struct/union
-  Villa.cpp
-  Person.cpp
-  Parent.cpp
-  OutDoorAnimal.cpp
-  InDoorAnimal.cpp
-  House.cpp
+d:\github projects\villageproject\villageproject\village.cpp(36): error C2065: 'cout': undeclared identifier
+d:\github projects\villageproject\villageproject\village.cpp(49): warning C4267: '+=': conversion from 'size_t' to 'int', possible loss of data
+d:\github projects\villageproject\villageproject\village.cpp(62): warning C4267: '+=': conversion from 'size_t' to 'int', possible loss of data
   Family.cpp
-d:\github projects\villageproject\villageproject\family.cpp(42): error C2065: 'cout': undeclared identifier
-  Dog.cpp
-  Child.cpp
-d:\github projects\villageproject\villageproject\child.cpp(9): warning C4305: 'argument': truncation from 'int (__cdecl *)(int)' to 'bool'
-  Bear.cpp
-  Apartment.cpp
-  Animal.cpp
+d:\github projects\villageproject\villageproject\family.cpp(49): error C2065: 'cout': undeclared identifier
   Generating Code...
