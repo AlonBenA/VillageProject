@@ -1,6 +1,8 @@
 #include "pch.h"
 #include "OutDoorAnimal.h"
+#include <iostream>
 
+using namespace std;
 
 OutDoorAnimal::OutDoorAnimal() {}
 
@@ -31,4 +33,10 @@ bool OutDoorAnimal::operator==(const OutDoorAnimal& other) {
 		return true;
 	}
 	return false;
+}
+
+
+void OutDoorAnimal::print() {
+	Animal::print();
+	cout << "an OutDoor Animal" << " is Dangerous: " << isDangerous << " and is Meat Eater: " << isMeatEater << endl;
 }

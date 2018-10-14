@@ -1,6 +1,9 @@
 #include "pch.h"
 #include "Dog.h"
 
+#include <iostream>
+
+using namespace std;
 
 Dog::Dog()
 {
@@ -26,4 +29,11 @@ bool Dog::operator==(const Dog & other) {
 		return true;
 	}
 	return false;
+}
+
+
+void Dog::print() {
+	InDoorAnimal::print();
+	cout << " is Dog " << Dog::MakeNoise() << endl;
+
 }

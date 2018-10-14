@@ -8,6 +8,7 @@ public:
 	~Bear();
 	Bear(int numOfLegs, bool isDangerous, bool isMeatEater);
 	string MakeNoise();
+	virtual void print();
 
 	bool operator==(const Bear & other);
 };

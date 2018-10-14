@@ -1,6 +1,8 @@
 #include "pch.h"
 #include "InDoorAnimal.h"
+#include <iostream>
 
+using namespace std;
 
 
 InDoorAnimal::InDoorAnimal() {}
@@ -34,4 +36,9 @@ bool InDoorAnimal::operator==(const InDoorAnimal& other) {
 		return true;
 	}
 	return false;
+}
+
+void InDoorAnimal::print() {
+	Animal::print();
+	cout << "Is In door Anime, is name is: " << name << " is Loyal: " << isLoyal << " is Energetic: " << isEnergetic << endl;
 }

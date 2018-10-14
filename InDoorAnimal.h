@@ -17,6 +17,7 @@ public:
 	bool getIsEnergetic();
 	bool getIsLoyal();
 	string getName();
+	virtual void print();
 
 	bool operator==(const InDoorAnimal& other);
 };

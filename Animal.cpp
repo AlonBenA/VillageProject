@@ -1,5 +1,8 @@
 #include "pch.h"
 #include "Animal.h"
+#include <iostream>
+
+using namespace std;
 
 Animal::Animal() {
 
@@ -26,4 +29,9 @@ bool Animal::operator==(const Animal& other) {
 	if (numOfLegs == other.numOfLegs)
 		return true;
 	return false;
+}
+
+
+void Animal::print() {
+	cout << "Anime with " << numOfLegs << " Legs " << endl;
 }

@@ -17,5 +17,6 @@ public:
 	int ShowNumLegs();
 	virtual string MakeNoise();
 	bool operator==(const Animal& other);
+	virtual void print();
 };
 

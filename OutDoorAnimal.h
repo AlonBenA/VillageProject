@@ -15,6 +15,7 @@ public:
 	~OutDoorAnimal();
 	bool getIsDangerous();
 	bool getIsMeatEater();
+	virtual void print();
 
 	bool operator==(const OutDoorAnimal& other);
 };
